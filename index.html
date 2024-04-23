@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/payroll_project/style.css">
+</head>
+
+<body class="home">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/payroll_project/image/payroll-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+        </div>
+    </nav>
+
+    <p class="fw-bold" style="font-size: 50px; color: white;">NET PAY CALCULATOR</p>
+    <p class="fw-light" style="color: wheat;font-size: 20px;">Enter the gross salary below amount to calculate your net
+        amount.</p>
+
+    <div class="table_parent">
+        <form id="myform" style="margin-top:5px ;">
+            <label for="basic_salary" style="margin-left: 5%;">basic_salary</label>
+            <input id="basic_salary" type="Number" placeholder="Enter basic salary">
+            <label for="benefits" style="margin-left: 40%; ;margin-bottom: 2%;">benefits</label>
+            <input type="Number" id="benefits" placeholder="Enter benefits">
+            <input type="submit" value="calculate" style="margin-left: 40%; ; background-color: blue; color: white; ">
+        </form>
+
+
+        :<table class="table table-bordered border-primary" style="border: 2;">
+            <thead>
+                <tr>
+                    <th scope="col">Description</th>
+                    <th scope="col">Results</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>Gross Salary</td>
+                    <td id="gross"></td>
+
+                </tr>
+                <tr>
+
+                    <td>NSSF</td>
+                    <td id="NSSF"></td>
+
+                </tr>
+                <tr>
+
+                    <td>NHDF</td>
+                    <td id="NHDF"></td>
+
+                </tr>
+                <tr>
+
+                    <td>PAYEE</td>
+                    <td id="PAYEE"></td>
+
+                </tr>
+                <tr>
+
+                    <td>NHIF</td>
+                    <td id="NHIF"></td>
+
+                </tr>
+                <tr>
+
+                    <td>Net Pay</td>
+                    <td id="Net Pay"></td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
